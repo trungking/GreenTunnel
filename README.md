@@ -6,6 +6,46 @@
     <img src="https://img.shields.io/github/license/SadeghHayeri/GreenTunnel.svg?color=Green&style=for-the-badge"> <img src="https://img.shields.io/github/repo-size/SadeghHayeri/GreenTunnel.svg?color=Green&style=for-the-badge"> <img src="https://img.shields.io/discord/707464295021019197?color=Green&style=for-the-badge">
 </p>
 
+## ⚠️ DEPRECATED NOTICE
+
+**This tool is now deprecated.** Modern browsers now support secure DNS with ECH (Encrypted Client Hello) which provides better privacy and security compared to proxy-based solutions. We recommend using your browser's built-in secure DNS features instead.
+
+### Recommended Alternative: Browser Secure DNS
+
+Instead of using GreenTunnel, you can enable secure DNS directly in your browser:
+
+#### Firefox
+1. Open Firefox and go to `Settings` (or type `about:preferences` in the address bar)
+2. Scroll down to the **Network Settings** section
+3. Click **Settings...** next to "Configure how Firefox connects to the internet"
+4. Scroll down to **Enable DNS over HTTPS**
+5. Select **Enable DNS over HTTPS using:** and choose a provider:
+   - **Cloudflare**: `https://mozilla.cloudflare-dns.com/dns-query`
+   - **NextDNS**: `https://firefox.dns.nextdns.io/`
+   - **Custom**: Enter your preferred DoH provider URL
+6. Click **OK** to save changes
+
+#### Chrome/Chromium/Edge
+1. Open Chrome and go to `Settings` (or type `chrome://settings/` in the address bar)
+2. Click **Privacy and security** in the left sidebar
+3. Click **Security**
+4. Scroll down to **Advanced** section
+5. Find **Use secure DNS** and toggle it on
+6. Choose between:
+   - **With your current service provider** (automatic)
+   - **With custom provider** and select from dropdown or enter custom DoH URL:
+     - **Cloudflare**: `https://cloudflare-dns.com/dns-query`
+     - **Google**: `https://dns.google/dns-query`
+     - **Quad9**: `https://dns.quad9.net/dns-query`
+
+#### Benefits of Browser Secure DNS:
+- **Better Security**: ECH (Encrypted Client Hello) support protects SNI information
+- **No Proxy Required**: Direct browser integration without performance overhead  
+- **Automatic Updates**: Browser security updates include DNS security improvements
+- **Standards Compliant**: Uses official DNS-over-HTTPS (DoH) and DNS-over-TLS (DoT) standards
+
+---
+
 GreenTunnel bypasses DPI (Deep Packet Inspection) systems found in many ISPs (Internet Service Providers) which block access to certain websites.
 
 <p align="center">
